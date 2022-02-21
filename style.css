@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Times New Roman', Times, serif;
+    
+}
+body{
+    background-color:antiquewhite; 
+}
+.container{
+  width: 500px;
+  height: 850px;
+  margin-top: 1%;
+  background-color: black;
+  color: white;
+  border-radius: 50px;
+  padding: 20px;
+  margin-left: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0px 0px 20px black;
+  outline: 2px solid white;
+}
+
+#screen-box{
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 200px;
+    margin-bottom: 20px;
+    margin-right: 15px;
+    overflow: hidden;
+}
+.screen-1{
+    font-size: 2rem;
+    color:bisque;
+    letter-spacing: 6px;
+    
+}
+.screen-2{
+    display:block;
+    font-size: 2rem;
+    min-height: 90px;
+}
+.calculator-box{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas:
+    "A B C D"
+    "E F G H"
+    "I J K L"
+    "M N O P"
+    "R R S T";
+    ;
+    gap:1rem;
+}
+.button{
+    background:rgb(59, 59, 59);
+    border-radius:50%;
+    font-size: 40px;
+    height: 5rem;
+    width:5rem;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.button:hover{
+    opacity: 0.6;
+}
+    
+.function{
+    background-color: rgb(168, 164, 164);
+    
+
+}
+.operator{
+    background-color:rgb(207, 135, 41);
+}
+
+.number{
+    background-color:rgb(71, 71, 71)
+
+}
+.number-0 {
+    border-radius: 55px;
+    justify-content: flex-start;
+    padding-left: 30px;
+    width: 200px;
+}
+
+.bottom-box{
+    display: flex;
+    justify-content: center;
+    align-items:flex-end;
+    height: 70px;
+  }
+  
+  .bottom{
+    background-color: white;
+    height: 0.2rem;
+    width: 40%;
+  }
+.function-AC      {grid-area: A;}
+.negative-positive{grid-area: B;}
+.percentage       {grid-area: C;}
+.divide           {grid-area: D;}
+.number-7         {grid-area: E;}
+.number-8         {grid-area: F;}
+.number-9         {grid-area: G;}
+.multiply         {grid-area: H;}
+.number-4         {grid-area: I;}
+.number-5         {grid-area: J;}
+.number-6         {grid-area: K;}
+.subtract         {grid-area: L;}
+.number-1         {grid-area: M;}
+.number-2         {grid-area: N;}
+.number-3         {grid-area: O;}
+.plus             {grid-area: P;}
+.number-0         {grid-area: R;}
+.number-dot       {grid-area: S;}
+.equal            {grid-area: T;}
+
+
+
+
+
